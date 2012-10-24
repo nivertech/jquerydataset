@@ -17,3 +17,5 @@ This will give you:
 leftMargin: 10px }`
 
 **If you have any modifications, I accept pull requests!**
+
+*@realchaseadams on twitter*

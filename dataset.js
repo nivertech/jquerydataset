@@ -62,12 +62,13 @@
     * data-, remove the data- and push the property and value to the dataset object.
     */
    } else {
-     var attributeset = element.attributes;
+     var attributeset = element.attributes,
+         prop, val;
 
      for (var i = 0; i < attributeset.length; i++) {
        if (attributeset[i].name.match(/^data-/)) {
-         var prop = attributeset[i].name.replace('data-', '');
-         var  val = attributeset[i].value;
+         prop = attributeset[i].name.replace(/^data-/, '');
+         val = attributeset[i].value;
          dataset[prop] = val;
        }
      }
